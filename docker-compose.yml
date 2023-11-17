@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  apple_bleee:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    command: bash
