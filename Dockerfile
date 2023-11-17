@@ -19,5 +19,3 @@ RUN apt -y install bluez \
     libbluetooth-dev && \
     pip3 install git+https://github.com/pybluez/pybluez.git#egg=pybluez && \
     pip3 install -r requirements.txt
-
-COPY src/ .
